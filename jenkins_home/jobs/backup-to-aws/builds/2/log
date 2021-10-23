@@ -1,0 +1,50 @@
+Started by user [8mha:////4Bt1u83zkdlxiwxyN/tX0D6V/15wNezdoab4Y/RJaaRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/backup-to-aws
+[SSH] script:
+MYSQL_HOST="db_host"
+AWS_SECRET_KEY=**********
+MYSQL_PASSWORD=**********
+DATABASE_NAME="testdb"
+AWS_BUCKET_NAME="paul-jenkins-mysql-backup"
+
+/tmp/script.sh $MYSQL_HOST $MYSQL_PASSWORD $DATABASE_NAME $AWS_SECRET_KEY $AWS_BUCKET_NAME
+
+[SSH] executing...
+ERROR: Failed to authenticate with public key
+com.jcraft.jsch.JSchException: invalid privatekey: [B@1c9aabe7
+	at com.jcraft.jsch.KeyPair.load(KeyPair.java:664)
+	at com.jcraft.jsch.IdentityFile.newInstance(IdentityFile.java:46)
+	at com.jcraft.jsch.JSch.addIdentity(JSch.java:441)
+	at org.jenkinsci.plugins.jsch.JSchSSHPublicKeyAuthenticator.doAuthenticate(JSchSSHPublicKeyAuthenticator.java:69)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.authenticate(SSHAuthenticator.java:431)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.authenticate(SSHAuthenticator.java:468)
+	at org.jvnet.hudson.plugins.CredentialsSSHSite.createSession(CredentialsSSHSite.java:122)
+	at org.jvnet.hudson.plugins.CredentialsSSHSite.executeCommand(CredentialsSSHSite.java:208)
+	at org.jvnet.hudson.plugins.SSHBuilder.perform(SSHBuilder.java:104)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:806)
+	at hudson.model.Build$BuildExecution.build(Build.java:198)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:514)
+	at hudson.model.Run.execute(Run.java:1888)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:99)
+	at hudson.model.Executor.run(Executor.java:432)
+[SSH] Exception:Auth fail
+com.jcraft.jsch.JSchException: Auth fail
+	at com.jcraft.jsch.Session.connect(Session.java:519)
+	at org.jvnet.hudson.plugins.CredentialsSSHSite.createSession(CredentialsSSHSite.java:132)
+	at org.jvnet.hudson.plugins.CredentialsSSHSite.executeCommand(CredentialsSSHSite.java:208)
+	at org.jvnet.hudson.plugins.SSHBuilder.perform(SSHBuilder.java:104)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:806)
+	at hudson.model.Build$BuildExecution.build(Build.java:198)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:163)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:514)
+	at hudson.model.Run.execute(Run.java:1888)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:99)
+	at hudson.model.Executor.run(Executor.java:432)
+Build step 'Execute shell script on remote host using ssh' marked build as failure
+Finished: FAILURE

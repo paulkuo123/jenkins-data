@@ -1,0 +1,54 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.TextParameterValue>
+          <name>MYSQL_HOST</name>
+          <value>db_host</value>
+        </hudson.model.TextParameterValue>
+        <hudson.model.TextParameterValue>
+          <name>DATABASE_NAME</name>
+          <value>testdb</value>
+        </hudson.model.TextParameterValue>
+        <hudson.model.TextParameterValue>
+          <name>AWS_BUCKET_NAME</name>
+          <value>paul-jenkins-mysql-backup</value>
+        </hudson.model.TextParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>MYSQL_HOST</string>
+        <string>DATABASE_NAME</string>
+        <string>AWS_BUCKET_NAME</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@2.6.2">
+      <boundCredentials class="concurrent-hash-map"/>
+    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
+  </actions>
+  <queueId>33</queueId>
+  <timestamp>1635002044408</timestamp>
+  <startTime>1635002044415</startTime>
+  <result>FAILURE</result>
+  <duration>74</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/workspace/backup-to-aws</workspace>
+  <hudsonVersion>2.317</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="java.util.Collections$UnmodifiableSet">
+    <c class="sorted-set"/>
+  </culprits>
+</build>

@@ -111,3 +111,9 @@ cd ..
 cd ..
 ls
 exit
+ssh remote_user@remote_host
+exit
+ssh remote_user@remote_host
+ssh-keygen -R remote_host
+ssh remote_user@remote_host
+exit

@@ -1,0 +1,8 @@
+Started by user [8mha:////4Bt1u83zkdlxiwxyN/tX0D6V/15wNezdoab4Y/RJaaRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/my-first-job
+[my-first-job] $ /bin/sh -xe /tmp/jenkins2827724800819247282.sh
++ /tmp/script.sh Paul Jenny true
+/tmp/script.sh: line 7: [: missing `]'
+If you want to see the name, please mark the show option
+Finished: SUCCESS

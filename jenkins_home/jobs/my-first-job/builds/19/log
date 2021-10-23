@@ -1,0 +1,9 @@
+Started by user [8mha:////4Bt1u83zkdlxiwxyN/tX0D6V/15wNezdoab4Y/RJaaRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/my-first-job
+[my-first-job] $ /bin/sh -xe /tmp/jenkins12198671125968766512.sh
++ Name=Paul
++ LastName=Nina
++ /tmp/script.sh Paul Nina
+Hello, Paul Nina
+Finished: SUCCESS

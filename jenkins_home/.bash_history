@@ -117,3 +117,45 @@ ssh remote_user@remote_host
 ssh-keygen -R remote_host
 ssh remote_user@remote_host
 exit
+ansible
+exit
+whoami
+exit
+curl
+curl version
+curl --version
+exit
+python version
+exit
+python2.7
+python2.7 version
+which python2.7
+which python2.7
+which python
+type -a python
+which python
+sudo pacman -S python2
+exit
+ansible
+exit
+cd ~
+ls
+cd ansible/
+ls
+cd ..
+exit
+ls
+cd ~
+ls
+cd ansible/
+ls
+cat hosts 
+ping remote_host
+ansible -i hosts -m ping test1
+exit
+cd  ~
+cd ansible/
+ls
+ansible-playbook -i hosts play.yml 
+ls
+ exit

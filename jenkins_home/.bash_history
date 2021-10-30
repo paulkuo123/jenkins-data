@@ -159,3 +159,39 @@ ls
 ansible-playbook -i hosts play.yml 
 ls
  exit
+ls
+cd ~
+cd ansible/
+ls
+pwd
+ls
+exit
+cat ~/ansible/play.yml 
+exit
+ls
+cat ~/ansible/play.yml 
+exit
+ssh web
+ls
+ssh web
+cd ~
+cd ansible/
+ls
+cat hosts 
+ansible -m ping -i hosts web1
+ansible -m ping -i hosts test1
+ansible -m ping -i hosts all
+exit
+cd ~/ansible/
+ls
+exit
+ls
+cd ~/ansible/
+ls
+ansible-playbook -i hosts people.yml 
+ansible-playbook -i hosts people.yml -e "PEOPLE_AGE=25"
+cat table.j2 
+ls
+pwd
+ls /var/jenkins_home/ansible/people.yml 
+exit

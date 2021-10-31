@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: olamy
+Build-Jdk: 11.0.12
+Extension-Name: maven-plugin
+Specification-Title: This plug-in provides, for better and for worse, 
+ a deep integration of Jenkins and Maven: Automatic triggers between p
+ rojects depending on SNAPSHOTs, automated configuration of various Je
+ nkins publishers (Junit, ...).
+Implementation-Title: maven-plugin
+Implementation-Version: 3.15
+Plugin-Class: hudson.maven.PluginImpl
+Group-Id: org.jenkins-ci.main
+Short-Name: maven-plugin
+Long-Name: Maven Integration plugin
+Url: https://github.com/jenkinsci/maven-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 3.15
+Hudson-Version: 2.289.1
+Jenkins-Version: 2.289.1
+Plugin-Dependencies: apache-httpcomponents-client-4-api:4.5.13-1.0,jav
+ adoc:1.6,jsch:0.1.55.2,junit:1.53,mailer:1.34,token-macro:2.15;resolu
+ tion:=optional
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: http://github.com/jenkinsci/maven-plugin
+

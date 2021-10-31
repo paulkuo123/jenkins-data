@@ -1,0 +1,20 @@
+Started by user [8mha:////4Bt1u83zkdlxiwxyN/tX0D6V/15wNezdoab4Y/RJaaRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins1500845751921705543.sh
++ echo BUILD NUMBER is 7
+BUILD NUMBER is 7
++ echo BUILD ID is 7
+BUILD ID is 7
++ echo BUILD URL is http://jenkins.localhost:8080/job/ENV/7/
+BUILD URL is http://jenkins.localhost:8080/job/ENV/7/
++ echo JOB NAME is ENV
+JOB NAME is ENV
++ echo ************************************
+************************************
++ echo Jenkins-course
+Jenkins-course
++ echo TAIWAN
+TAIWAN
+Sending e-mails to: a44387521@gmail.com
+Finished: SUCCESS

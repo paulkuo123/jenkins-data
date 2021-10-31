@@ -6,6 +6,7 @@
   <mode>NORMAL</mode>
   <useSecurity>true</useSecurity>
   <authorizationStrategy class="com.michelin.cio.hudson.plugins.rolestrategy.RoleBasedAuthorizationStrategy">
+    <roleMap type="slaveRoles"/>
     <roleMap type="projectRoles">
       <role name="Ansible" pattern="ansible-.*">
         <permissions>
@@ -25,7 +26,6 @@
         </assignedSIDs>
       </role>
     </roleMap>
-    <roleMap type="slaveRoles"/>
     <roleMap type="globalRoles">
       <role name="admin" pattern=".*">
         <permissions>

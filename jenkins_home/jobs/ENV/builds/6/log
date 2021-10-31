@@ -1,0 +1,23 @@
+Started by user [8mha:////4Bt1u83zkdlxiwxyN/tX0D6V/15wNezdoab4Y/RJaaRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins17143098912440695175.sh
++ echo BUILD NUMBER is 6
+BUILD NUMBER is 6
++ echo BUILD ID is 6
+BUILD ID is 6
++ echo BUILD URL is http://jenkins.localhost:8080/job/ENV/6/
+BUILD URL is http://jenkins.localhost:8080/job/ENV/6/
++ echo JOB NAME is ENV
+JOB NAME is ENV
++ echo ************************************
+************************************
++ echo Jenkins-course
+Jenkins-course
++ echo TAIWAN
+TAIWAN
++ echo1
+/tmp/jenkins17143098912440695175.sh: 9: echo1: not found
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: a44387521@gmail.com
+Finished: FAILURE

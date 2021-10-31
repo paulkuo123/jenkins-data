@@ -1,0 +1,3 @@
+[filesystem "Eclipse Foundation|11.0.12|/dev/nvme0n1p7"]
+	timestampResolution = 3000 nanoseconds
+	minRacyThreshold = 4009 microseconds

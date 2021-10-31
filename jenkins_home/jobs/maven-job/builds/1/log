@@ -1,0 +1,22 @@
+Started by user [8mha:////4Bt1u83zkdlxiwxyN/tX0D6V/15wNezdoab4Y/RJaaRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/maven-job
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/jenkins-docs/simple-java-maven-app.git
+ > git init /var/jenkins_home/workspace/maven-job # timeout=10
+Fetching upstream changes from https://github.com/jenkins-docs/simple-java-maven-app.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/jenkins-docs/simple-java-maven-app.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/jenkins-docs/simple-java-maven-app.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d429203aa304cba0a1beb7fda8219d916c1e2fce (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d429203aa304cba0a1beb7fda8219d916c1e2fce # timeout=10
+Commit message: "Merge pull request #264 from MarkEWaite/use-latest-compiler-plugin"
+First time build. Skipping changelog.
+Finished: SUCCESS

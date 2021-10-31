@@ -195,3 +195,11 @@ ls
 pwd
 ls /var/jenkins_home/ansible/people.yml 
 exit
+ls
+cd /var/jenkins_home/workspace/maven-job/target/
+ls
+cd ..
+ls
+ls target/surefire-reports/*.xml
+ls
+exit

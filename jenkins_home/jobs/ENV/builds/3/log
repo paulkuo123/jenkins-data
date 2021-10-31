@@ -1,0 +1,19 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins15983938033677912504.sh
++ echo BUILD NUMBER is 3
+BUILD NUMBER is 3
++ echo BUILD ID is 3
+BUILD ID is 3
++ echo BUILD URL is http://jenkins.localhost:8080/job/ENV/3/
+BUILD URL is http://jenkins.localhost:8080/job/ENV/3/
++ echo JOB NAME is ENV
+JOB NAME is ENV
++ echo ************************************
+************************************
++ echo Jenkins-course
+Jenkins-course
++ echo TAIWAN
+TAIWAN
+Finished: SUCCESS

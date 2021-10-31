@@ -1,0 +1,19 @@
+Started by user [8mha:////4Bt1u83zkdlxiwxyN/tX0D6V/15wNezdoab4Y/RJaaRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins17252612702719429684.sh
++ echo BUILD NUMBER is 2
+BUILD NUMBER is 2
++ echo BUILD ID is 2
+BUILD ID is 2
++ echo BUILD URL is http://jenkins.localhost:8080/job/ENV/2/
+BUILD URL is http://jenkins.localhost:8080/job/ENV/2/
++ echo JOB NAME is ENV
+JOB NAME is ENV
++ echo ************************************
+************************************
++ echo Jenkins-course
+Jenkins-course
++ echo TAIWAN
+TAIWAN
+Finished: SUCCESS

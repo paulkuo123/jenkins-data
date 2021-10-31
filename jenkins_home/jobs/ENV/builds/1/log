@@ -1,0 +1,13 @@
+Started by user [8mha:////4Bt1u83zkdlxiwxyN/tX0D6V/15wNezdoab4Y/RJaaRdAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/ENV
+[ENV] $ /bin/sh -xe /tmp/jenkins7328675104884109859.sh
++ echo BUILD NUMBER is 1
+BUILD NUMBER is 1
++ echo BUILD ID is 1
+BUILD ID is 1
++ echo BUILD URL is http://jenkins.localhost:8080/job/ENV/1/
+BUILD URL is http://jenkins.localhost:8080/job/ENV/1/
++ echo JOB NAME is ENV
+JOB NAME is ENV
+Finished: SUCCESS

@@ -1,0 +1,8 @@
+Started by user [8mha:////4GQCBgFYKDdwNerfTwp1g9V7gTMV0l0HwILgNgAHab6BAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyWEgYu/dLi1CL9gsTSHADG0rrRvwAAAA==[0mpaul
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/my-first-job
+[my-first-job] $ /bin/sh -xe /tmp/jenkins18292118990576139281.sh
++ /tmp/script.sh Paul Jenny true
+/tmp/jenkins18292118990576139281.sh: 2: /tmp/script.sh: not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

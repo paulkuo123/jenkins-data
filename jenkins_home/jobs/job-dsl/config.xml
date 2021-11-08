@@ -1,0 +1,114 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <javaposse.jobdsl.plugin.ExecuteDslScripts plugin="job-dsl@1.78.1">
+      <scriptText>job(&apos;job_dsl_example&apos;) {
+
+    description(&apos;This is my awesome Job&apos;)
+
+  
+    parameters {
+        stringParam(&apos;Planet&apos;, defaultValue = &apos;world&apos;, description = &apos;This is the world&apos;)
+	booleanParam(&apos;FLAG&apos;, true)
+        choiceParam(&apos;OPTION&apos;, [&apos;option 1 (default)&apos;, &apos;option 2&apos;, &apos;option 3&apos;])
+    }
+
+    scm {
+        git(&apos;https://github.com/jenkins-docs/simple-java-maven-app&apos;, &apos;master&apos;)
+    }
+
+    triggers {
+        cron(&apos;H 5 * * 7&apos;)
+    }
+
+    steps {
+        shell(&quot;&quot;&quot;
+		echo &apos;Hello World&apos;
+		echo &apos;123&apos;
+	      &quot;&quot;&quot;)
+	}
+}
+
+
+job(&apos;ansible-users-db-dsl&apos;) {
+
+    description(&apos;Update the html table based on input&apos;)
+
+  
+    parameters {
+        choiceParam(&apos;AGE&apos;, [&apos;20&apos;, &apos;21&apos;, &apos;22&apos;, &apos;23&apos;, &apos;24&apos;, &apos;25&apos;])
+    }
+
+    steps {
+
+        wrappers {
+            colorizeOutput(colorMap = &apos;xterm&apos;)
+      }
+        ansiblePlaybook(&apos;/var/jenkins_home/ansible/people.yml&apos;) {
+            inventoryPath(&apos;/var/jenkins_home/ansible/hosts&apos;)
+            colorizedOutput(true)
+            extraVars {
+                extraVar(&quot;PEOPLE_AGE&quot;, &apos;${AGE}&apos;, false)
+            }
+        }
+    }
+
+}
+
+
+job(&apos;maven_dsl&apos;) {
+
+    description(&apos;Maven dsl project&apos;)
+
+    scm {
+        git(&apos;https://github.com/jenkins-docs/simple-java-maven-app&apos;, &apos;master&apos;, {node -&gt; node / &apos;extensions&apos; &lt;&lt; &apos;&apos; })
+    }
+  
+    steps {
+        maven {
+            mavenInstallation(&apos;jenkins-maven&apos;)
+            goals(&apos;-B -DskipTests clean package&apos;)
+        }
+        maven {
+            mavenInstallation(&apos;jenkins-maven&apos;)
+            goals(&apos;test&apos;)
+        }
+        shell(&apos;&apos;&apos;
+            echo ************RUNNING THE JAR************************     
+            java -jar /var/jenkins_home/workspace/maven_dsl/target/my-app-1.0-SNAPSHOT.jar
+        &apos;&apos;&apos;)
+    }
+
+    publishers {
+        archiveArtifacts(&apos;target/*.jar&apos;)
+        archiveJunit(&apos;target/surefire-reports/*.xml&apos;)
+        mailer(&apos;ricardo.andre.gonzalez07@gmail.com&apos;, true, true)
+    }
+}</scriptText>
+      <usingScriptText>true</usingScriptText>
+      <sandbox>false</sandbox>
+      <ignoreExisting>false</ignoreExisting>
+      <ignoreMissingFiles>false</ignoreMissingFiles>
+      <failOnMissingPlugin>false</failOnMissingPlugin>
+      <failOnSeedCollision>false</failOnSeedCollision>
+      <unstableOnDeprecation>false</unstableOnDeprecation>
+      <removedJobAction>IGNORE</removedJobAction>
+      <removedViewAction>IGNORE</removedViewAction>
+      <removedConfigFilesAction>IGNORE</removedConfigFilesAction>
+      <lookupStrategy>JENKINS_ROOT</lookupStrategy>
+    </javaposse.jobdsl.plugin.ExecuteDslScripts>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

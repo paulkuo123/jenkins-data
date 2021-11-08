@@ -8,16 +8,16 @@ job('maven_dsl') {
   
     steps {
         maven {
-            mavenInstallation('mvn-jenkins')
+            mavenInstallation('jenkins-maven')
             goals('-B -DskipTests clean package')
         }
         maven {
-            mavenInstallation('mvn-jenkins')
+            mavenInstallation('jenkins-maven')
             goals('test')
         }
         shell('''
             echo ************RUNNING THE JAR************************     
-            java -jar /var/jenkins_home/workspace/mavn/target/my-app-1.0-SNAPSHOT.jar
+            java -jar /var/jenkins_home/workspace/maven/target/my-app-1.0-SNAPSHOT.jar
         ''')
     }
 

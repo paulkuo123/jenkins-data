@@ -1,0 +1,31 @@
+commit 1775cf6ff0aeb820f2facecb2843105f066e912b
+tree 6640978b47c363dcd8a664e3e0e486a65aa11b6d
+parent 47c4504e08f9426cc842474e62561b9ddaa9a4f7
+author Paul <a44387521@gmail.com> 2021-11-08 22:55:47 +0800
+committer Paul <a44387521@gmail.com> 2021-11-08 22:55:47 +0800
+
+    Add post action to Jenkinsfile
+
+
+:100644 100644 bf2653e44bdbc6c4a55ede6d3c8b080b14d75503 3057676e39272e38e04640f9dc201b3e6ed2e2b1 M	Jenkinsfile
+commit 47c4504e08f9426cc842474e62561b9ddaa9a4f7
+tree 94a2913bfea409d52cb06650ce05c502c14629af
+parent 12fcc67691f42b6e699890a3b20940740b22d35b
+author Paul <a44387521@gmail.com> 2021-11-08 22:42:00 +0800
+committer Paul <a44387521@gmail.com> 2021-11-08 22:42:00 +0800
+
+    Adds credentials to Jenkinsfile
+
+
+:100644 100644 c8d7e948076dc92f8def22ccc8f531dcc738d989 bf2653e44bdbc6c4a55ede6d3c8b080b14d75503 M	Jenkinsfile
+commit 12fcc67691f42b6e699890a3b20940740b22d35b
+tree bad1b310fbe7ddb6b91af0570dd9fb2d25f5c956
+parent 64041f0e8da6d5d667ea01e1b310bfdbcfb7efc4
+author Paul <a44387521@gmail.com> 2021-11-08 22:27:21 +0800
+committer Paul <a44387521@gmail.com> 2021-11-08 22:27:21 +0800
+
+    Fixes workspace path for jobs execution
+
+
+:100755 100755 deae337d329f87db165994b671980bf7d9be82ed 5ee117b47a2cc22507f9deaa5fae04969246d9a8 M	jenkins/build/mvn.sh
+:100755 100755 55cbbf8d3c8b7214d1873eefdae4c14e337f4f24 28e3814ebbc55c8ba6c1e839fecdc4f9a87f6fa8 M	jenkins/test/mvn.sh

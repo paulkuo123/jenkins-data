@@ -8,7 +8,8 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/jenkins-docs/simple-java-maven-app.git</url>
+        <url>http://paul:12345678@git:80/jenkins/maven.git</url>
+        <credentialsId>96f3576f-c243-4d59-bf8e-3142d116c6e6</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
     <branches>

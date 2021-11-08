@@ -19,7 +19,10 @@ job('job_dsl_example') {
     }
 
     steps {
-        shell("echo 'Hello World'")
-    }
+        shell("""
+		echo 'Hello World'
+		echo '123'
+	      """)
+	}
 }
 
